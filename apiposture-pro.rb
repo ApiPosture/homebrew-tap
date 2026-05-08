@@ -5,21 +5,21 @@
 class ApiposturePro < Formula
   desc "Professional API security inspection tool for Go applications"
   homepage "https://apiposture.dev"
-  version "1.0.11"
+  version "1.0.12"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://www.apiposture.com/releases/apiposture-pro_1.0.11_darwin_amd64.tar.gz"
-      sha256 "14cfb5c23d4f7ff6460297f1931be5d3fc6e149259ff89ce80ca120379d7587e"
+      url "https://www.apiposture.com/releases/apiposture-pro_1.0.12_darwin_amd64.tar.gz"
+      sha256 "ec1e54bb6d86fe24bdca35482e7b80714c31501ef3dc53acf3003358b5a8aedf"
 
       define_method(:install) do
         bin.install "apiposture-pro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://www.apiposture.com/releases/apiposture-pro_1.0.11_darwin_arm64.tar.gz"
-      sha256 "a1f4d71e05d5a554998e79916ec238e18cc22e85be086c65b35fc7ad2937402c"
+      url "https://www.apiposture.com/releases/apiposture-pro_1.0.12_darwin_arm64.tar.gz"
+      sha256 "5b1bc7b96afd0a426e1356e7d84fa4ce650fd4b49d3b88e8c103d8a53bd3ec75"
 
       define_method(:install) do
         bin.install "apiposture-pro"
@@ -29,15 +29,15 @@ class ApiposturePro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://www.apiposture.com/releases/apiposture-pro_1.0.11_linux_amd64.tar.gz"
-      sha256 "e05b1f8f54caff8df01710c2dc66ff1b3ff1bbd5d6efc4542dad6aa21ad8bc26"
+      url "https://www.apiposture.com/releases/apiposture-pro_1.0.12_linux_amd64.tar.gz"
+      sha256 "7dc8a1fa4ae3235e7630c0bdce90b509052439bcc54c5f4142e0fe7d82a2f774"
       define_method(:install) do
         bin.install "apiposture-pro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://www.apiposture.com/releases/apiposture-pro_1.0.11_linux_arm64.tar.gz"
-      sha256 "408f676907af1ce82341fc6a495c064475d5f6a48968b09b4c2ce84c5091868a"
+      url "https://www.apiposture.com/releases/apiposture-pro_1.0.12_linux_arm64.tar.gz"
+      sha256 "de52cdcd672007073f33e81434f6133e29585377c129df3818a06692b61cdb80"
       define_method(:install) do
         bin.install "apiposture-pro"
       end
